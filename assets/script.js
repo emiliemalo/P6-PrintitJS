@@ -1,13 +1,13 @@
 
+let banner = document.getElementById(slides)
 
-
-arrowLeft.addEventListener('lick')
+arrowLeft.addEventListener('click')
 arrowRight.addEventListener('click')
 
 
 /*CODE DE OPENCLASSROOM*/
 
-const slides = [
+img.src= const slides = [
 	{
 		"image":"slide1.jpg",
 		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
