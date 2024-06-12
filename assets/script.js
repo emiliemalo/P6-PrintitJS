@@ -1,12 +1,8 @@
 
 
-
-
-const arrowLeft = document.querySelector ("arrow_left");
-console.log(arrowLeft);
-const arrowRight= document.querySelector ("arrow_right");
-console.log(arrowRight);
-
+let image = document.getElementById(banner)
+image.setAttribute("src","images/slideshow/slide2.jpg")
+let  = document.querySelectorAll(banner)
 
 arrowLeft.addEventListener('onclick')
 arrowRight.addEventListener('onclick')
