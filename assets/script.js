@@ -1,12 +1,11 @@
 
 
-let image = document.getElementById(banner)
-image.setAttribute("src","images/slideshow/slide2.jpg")
-let  = document.querySelectorAll(banner)
 
-arrowLeft.addEventListener('onclick')
-arrowRight.addEventListener('onclick')
+arrowLeft.addEventListener('lick')
+arrowRight.addEventListener('click')
 
+
+/*CODE DE OPENCLASSROOM*/
 
 const slides = [
 	{
