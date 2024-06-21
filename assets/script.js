@@ -1,5 +1,5 @@
 
-let banner = document.getElementById(slides)
+
 
 
 
@@ -41,7 +41,7 @@ générer le html qui correspond à la slide
 let i = 0;
 
 const image = document.getElementById("slides");
-image.src = "./assets/images/slideshow/" + img_slides[i].image;
+image.src = "./assets/images/slideshow/" + img_slides[i].image
 
 const tag = document.getElementById("tagline");
 tag.innerHTML = img_slides[i].tagLine;
