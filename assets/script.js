@@ -66,6 +66,13 @@ function nextSlide() {
     updateSlide(i);
 }
 
+function prevSlide() {
+    i--;
+	if (i < 0) {
+        i = img_slides.length - 1;
+    }
+    updateSlide(i);
+}
 
 
 
