@@ -43,19 +43,38 @@ tag.innerHTML = img_slides[i].tagLine;
 
 let i = 0;
 
+function updateSlide(i){
+
 const image = document.getElementById("slides");
 image.src = "./assets/images/slideshow/" + img_slides[i].image
 
 const tag = document.getElementById("tagline");
 tag.innerHTML = img_slides[i].tagLine; 
 
-
-function activeSlide(i){
-	image.src = "./assets/images/slideshow/" + img_slides[i].image
-	tag.innerHTML = img_slides[i].tagLine; 
-
 }
-activeSlide(i)
+
+updateSlide(i);
+
+document.getElementById("nextButton").addEventListener("click", nextSlide);
+document.getElementById("prevButton").addEventListener("click", prevSlide);
+
+function nextSlide() {
+    i++;
+    if (i >= img_slides.length) {
+        i = 0;
+    }
+    updateSlide(i);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
