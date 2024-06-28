@@ -41,31 +41,23 @@ tag.innerHTML = img_slides[i].tagLine;
 	}
 ]
 
+let i = 0;
 
-const banner = document.querySelector ("banner");
 const image = document.getElementById("slides");
+image.src = "./assets/images/slideshow/" + img_slides[i].image
+
 const tag = document.getElementById("tagline");
-const arrowLeft = document.getElementById("left")
-const arrowRight = document.getElementById("right")
+tag.innerHTML = img_slides[i].tagLine; 
 
-let i=0;
 
-function activeSlide (){
-
-	banner.src = slides [i].image;
-	taglineElement.innerHTML = slides[i].tagLine;
+function activeSlide(i){
+	image.src = "./assets/images/slideshow/" + img_slides[i].image
+	tag.innerHTML = img_slides[i].tagLine; 
 
 }
+activeSlide(i)
 
 
-
-arrowRight.addEventListener("click", () => {
-	i = (i + 1) % slides.length;
-	activeSlide();
-
-arrowLeft.addEventListener("click", () => {
-		i = (i - 1 + slides.length) % slides.length;
-		activeSlide();
 
 
 
