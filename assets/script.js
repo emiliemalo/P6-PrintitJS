@@ -68,6 +68,8 @@ function updateDots(i) {
 
 updateSlide(i);
 
+
+
 document.getElementById("nextButton").addEventListener("click", nextSlide);
 document.getElementById("prevButton").addEventListener("click", prevSlide);
 
