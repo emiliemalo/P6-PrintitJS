@@ -51,6 +51,19 @@ image.src = "./assets/images/slideshow/" + img_slides[i].image
 const tag = document.getElementById("tagline");
 tag.innerHTML = img_slides[i].tagLine; 
 
+updateDots(i)
+
+}
+
+function updateDots(i) {
+    const dots = document.querySelectorAll(".dot");
+    dots.forEach((dot, index) => {
+        if (index === i) {
+            dot.classList.add("dot_selected");
+        } else {
+            dot.classList.remove("dot_selected");
+        }
+    });
 }
 
 updateSlide(i);
@@ -73,7 +86,6 @@ function prevSlide() {
     }
     updateSlide(i);
 }
-
 
 
 

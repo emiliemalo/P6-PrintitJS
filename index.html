@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print it ! - Impressions d'entreprise</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Print it ! - Impressions d'entreprise</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <header class="container">
-    <h1>
-      <img class="logo" src="./assets/images/logo.png" alt="Print it ! Impressions d'entreprises" />
-    </h1>
-    <a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
-  </header>
-  <main>
-    <div id="banner">
-
+  <body>
+    <header class="container">
+      <h1>
+        <img
+          class="logo"
+          src="./assets/images/logo.png"
+          alt="Print it ! Impressions d'entreprises"
+        />
+      </h1>
+      <a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
+    </header>
+    <main>
+      <div id="banner">
         <!--FLECHE GAUCHE -->
         <div class="arrow_left" id="prevButton">
           <img
@@ -29,17 +33,18 @@
             src="./assets/images/arrow_left.png"
             alt="Banner arrow_left"
           />
-       
         </div>
-        
 
+        <img
+          id="slides"
+          class="banner-img"
+          src="./assets/images/slideshow/slide2.jpg"
+          alt="Banner Print-it"
+        />
+        <div class="banner-img"></div>
+        <p id="tagline"></p>
 
-      <img id="slides" class="banner-img" src="./assets/images/slideshow/slide2.jpg" alt="Banner Print-it" />
-      <div class="banner-img">
-      </div>
-      <p id="tagline"></p>
-
-          <!--FLECHE DROITE-->
+        <!--FLECHE DROITE-->
         <div class="arrow_right" id="nextButton">
           <img
             class="arrow_right"
@@ -48,10 +53,10 @@
           />
         </div>
         <div class="dots">
-          <div class="dot" data-index="0"></div>
-          <div class="dot" data-index="1"></div>
-          <div class="dot" data-index="2"></div>
-          <div class="dot" data-index="3"></div>
+          <div class="dot" id="dotButton" data-index="0"></div>
+          <div class="dot"id="dotButton" data-index="1"></div>
+          <div class="dot"id="dotButton"data-index="2"></div>
+          <div class="dot"id="dotButton" data-index="3"></div>
         </div>
       </div>
       <section id="about-us" class="container">
